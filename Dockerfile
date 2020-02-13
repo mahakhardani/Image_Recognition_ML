@@ -5,6 +5,7 @@ RUN mkdir imageRecognition
 WORKDIR imageRecognition
 
 COPY model .
+COPY run.sh .
 
 #download classify image model
 RUN python classify_image.py
